@@ -1,5 +1,5 @@
 
-<img width="354" alt="Screenshot 2024-07-31 at 3 17 45 PM" src="https://github.com/user-attachments/assets/05d1a1af-0dc4-47bd-981d-19b652bab9b3">
+<img width="1000" alt="Screenshot 2024-07-31 at 3 17 45 PM" src="https://github.com/user-attachments/assets/05d1a1af-0dc4-47bd-981d-19b652bab9b3">
 
 # What is DecentraLog?
 
