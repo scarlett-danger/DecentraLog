@@ -1,3 +1,4 @@
+```
 d8888b.      d88888b       .o88b.      d88888b      d8b   db      d8888b.       .d8b.       db            .d88b.        d888b  
 88  `8D      88'          d8P  Y8      88'          888o  88      88  `8D      d8' `8b      88           .8P  Y8.      88' Y8b 
 88   88      88ooooo      8P           88ooooo      88V8o 88      88oobY'      88ooo88      88           88    88      88      
@@ -6,10 +7,10 @@ d8888b.      d88888b       .o88b.      d88888b      d8b   db      d8888b.       
 Y8888D'      Y88888P       `Y88P'      Y88888P      VP   V8P      88   YD      YP   YP      Y88888P       `Y88P'        Y888P  
 
 Securing, chaining, and analyzing logs through blockchain, Oracles and generative AI with RAG.
-
+```
 
 # Architecture
-
+```
 +-------------------------+
 |    Client Applications  |
 |  +--------+ +---------+ |
@@ -128,3 +129,4 @@ Securing, chaining, and analyzing logs through blockchain, Oracles and generativ
 +-------------------------+
 |   Alert System          |
 +-------------------------+
+```
