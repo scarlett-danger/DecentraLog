@@ -14,7 +14,7 @@ Securing, chaining, and analyzing logs through blockchain, Oracles and generativ
 +-------------------------+
 |    Client Applications  |
 |  +--------+ +---------+ |
-|  |Web App | |Mobile App||
+|  |Web App | |Mobile App| |
 |  +--------+ +---------+ |
 +------------+------------+
              |
@@ -101,7 +101,7 @@ Securing, chaining, and analyzing logs through blockchain, Oracles and generativ
              |
              v
 +-------------------------+
-|   Ethereum Network      |
+|   SKALE Network         |
 |  +-------------------+  |
 |  |  Smart Contract   |  |
 |  | (SecurityLogs.sol)|  |
@@ -129,4 +129,5 @@ Securing, chaining, and analyzing logs through blockchain, Oracles and generativ
 +-------------------------+
 |   Alert System          |
 +-------------------------+
+
 ```
