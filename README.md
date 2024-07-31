@@ -11,6 +11,18 @@ Securing, chaining, and analyzing logs through blockchain, Oracles and generativ
              | HTTPS/WSS
              v
 +-------------------------+
+|   AWS CloudFront        |
+| (Content Delivery)      |
++------------+------------+
+             |
+             v
++-------------------------+
+|   AWS Amplify           |
+| (Hosting & Deployment)  |
++------------+------------+
+             |
+             v
++-------------------------+
 |   API Gateway / LB      |
 +------------+------------+
              |
@@ -18,30 +30,63 @@ Securing, chaining, and analyzing logs through blockchain, Oracles and generativ
      |               |
      v               v
 +------------+ +------------+
-|Web Server  | |WebSocket   |
-|(Express.js)| |Server      |
+|NestJS      | |WebSocket   |
+|Server      | |Gateway     |
 +------------+ +------------+
      |               |
      +-------+-------+
              |
              v
 +-------------------------+
-|   Application Server    |
-|   (Node.js/Python)      |
+|   NestJS Application    |
+| +---------------------+ |
+| | Controllers         | |
+| | Services            | |
+| | Modules             | |
+| | Middleware          | |
 +------------+------------+
      |               |
      v               v
 +------------+ +------------+
 |Database    | |Cache       |
-|(PostgreSQL)| |(Redis)     |
+|(RDS/Dynamo)| |(ElastiCache|
 +------------+ +------------+
-     |               |
-     +-------+-------+
              |
              v
 +-------------------------+
-|   Blockchain Interface  |
-|   (Web3.js/ethers.js)   |
+| DApp Development Tools  |
+| +---------------------+ |
+| | Truffle Suite       | |
+| | Web3.js / ethers.js | |
++------------+------------+
+             |
+             v
++-------------------------+
+| AWS Blockchain Services |
+| +---------------------+ |
+| | Amazon EC2          | |
+| | (Layer 2 Nodes)     | |
+| +---------------------+ |
+| | Amazon S3           | |
+| | (Data Storage)      | |
+| +---------------------+ |
+| | AWS Lambda          | |
+| | (Serverless Compute)| |
+| +---------------------+ |
+| | Amazon VPC          | |
+| | (Networking)        | |
+| +---------------------+ |
+| | Amazon QLDB         | |
+| | (Ledger Database)   | |
++------------+------------+
+             |
+             v
++-------------------------+
+| Cloud DevOps Services   |
+| +---------------------+ |
+| | AWS CodePipeline    | |
+| | AWS CodeBuild       | |
+| | AWS CodeDeploy      | |
 +------------+------------+
              |
              v
@@ -52,8 +97,6 @@ Securing, chaining, and analyzing logs through blockchain, Oracles and generativ
 |  | (SecurityLogs.sol)|  |
 |  +-------------------+  |
 +------------+------------+
-             |
-     +-------+-------+
      |               |
      v               v
 +------------+ +------------+
@@ -68,14 +111,11 @@ Securing, chaining, and analyzing logs through blockchain, Oracles and generativ
 |   RAG System            |
 | +---------------------+ |
 | |Document Retriever   | |
-| +---------------------+ |
 | |Perplexity AI        | |
 | |Log Analyzer         | |
-| +---------------------+ |
 +------------+------------+
              |
              v
 +-------------------------+
 |   Alert System          |
 +-------------------------+
-
